@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  my_pg_2:
+    container_name: my_pg_2
+    image: postgres
+    environment:
+      POSTGRES_USER: petpro
+      POSTGRES_PASSWORD: petpro
+      PGDATA: /data/postgres2
+    ports:
+      - 6432:5432
