@@ -80,7 +80,7 @@ def show_info(message):
                     bgcolor = '#FFFF00'  # Yellow background
                 else:
                     bgcolor = '#FF0000'  # Red background
-                table += f"<pre>{source}\t{amount}</pre>\n<code style='background-color:{bgcolor}'>{' '*len(str(amount))}{'.'}</code>\n"  # Add source and amount with background color
+                table += f"<pre>{source}\t{amount}</pre>\n<code style='background-color:{bgcolor}'>{' '*len(str(amount))}{'.'}</code>\n"  
             bot.send_message(message.chat.id, f'{table}', parse_mode="HTML")
         else:
             bot.send_message(message.chat.id, 'Нет данных о расходах за последнюю неделю.')
@@ -93,14 +93,13 @@ def show_info(message):
             for row in rows:
                 source = row[0]
                 amount = row[1]
-                # Set background color based on sum amount
                 if amount < 5000:
                     bgcolor = '#00FF00'  # Green background
                 elif amount < 10000:
                     bgcolor = '#FFFF00'  # Yellow background
                 else:
                     bgcolor = '#FF0000'  # Red background
-                table += f"<pre>{source}\t{amount}</pre>\n<code style='background-color:{bgcolor}'>{' '*len(str(amount))}{'.'}</code>\n"  # Add source and amount with background color
+                table += f"<pre>{source}\t{amount}</pre>\n<code style='background-color:{bgcolor}'>{' '*len(str(amount))}{'.'}</code>\n"  
             bot.send_message(message.chat.id, f'{table}', parse_mode="HTML")
         else:
             bot.send_message(message.chat.id, 'Нет данных о расходах за текущий месяц.')
