@@ -1,7 +1,7 @@
 TOKEN = "7066430727:AAF_TOqmgwm-sII7YlOGYizqa8KgdtfNIys"
 
 dbname = 'postgres'
-user = 'petpro'
-password = 'petpro'
+user = 'postgres'
+password = 'postgres'
 host = 'localhost'  
-port = '6432' 
+port = '5432' 
