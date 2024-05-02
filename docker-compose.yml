@@ -9,4 +9,4 @@ services:
       POSTGRES_PASSWORD: petpro
       PGDATA: /data/postgres2
     ports:
-      - 6432:5432
+      - 5432:5432
