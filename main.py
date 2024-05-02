@@ -206,7 +206,8 @@ def costs_source(message):
     btn_16 = types.KeyboardButton('Психолог')
     markup.row(btn_15, btn_16)
     btn_17 = types.KeyboardButton('WildBerries')
-    markup.row(btn_17)
+    btn_18 = types.KeyboardButton('Самокат')
+    markup.row(btn_17, btn_18)
     bot.send_message(message.chat.id, 'Выбери источник расходов', reply_markup=markup)
 
 #### Введдение суммы расхода или прихода
